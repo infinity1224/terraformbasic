@@ -5,7 +5,7 @@ resource "aws_instance" "one" {
   ami                    = var.ami_id
   instance_type          = var.itype
   key_name               = var.kname
-  vpc_security_group_ids = [aws_security_group.mysg.id]
+  vpc_security_group_ids = [aws_security_group.mysec.id]
   root_block_device {
     volume_size = 10
   }

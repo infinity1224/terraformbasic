@@ -17,3 +17,8 @@ variable "ami_id" {
   type    = string
   default = "ami-0d94353f7bad10668"
 }
+
+variable "ports" {
+  type    = list(any)
+  default = [22, 80, 443, 8080]
+}
